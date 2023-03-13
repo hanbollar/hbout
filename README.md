@@ -25,5 +25,4 @@ Some Things, though a bit more random:
 
 - there's a star named after me (got it as a birthday gift) in one of the official registries
 
-- athletically i'm a mess, half the time i'm left-side dominate, half the time it's right, your guess is as good as mine
-
+- athletically, half the time i'm left-side dominate, half the time it's right, your guess is as good as mine
