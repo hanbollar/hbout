@@ -13,7 +13,7 @@ Some Things:
 
 - Earned a BSE in [Computer Science : Digital Media Design](https://catalog.upenn.edu/undergraduate/programs/digital-media-design-bse/) and an MSE in [Computer Graphics in Game Technology](https://www.cis.upenn.edu/graduate/program-offerings/mse-in-computer-graphics-and-game-technology/) from Penn. The place was like a candy shop of things todo - did some TAing (covering math,cs,physics,art,etc), did a lot of things with our Siggraph chapter, founded our AWE chapter, earned some awards. All-in-all, met a lot of really great people (shout out [CG@Penn](cg.cis.upenn.edu)) and had a blast ~
 
-- Teaching && Mentoring is important to me - it takes a village to succeed. I couldnt have gotten to where I am without the many mentors I've reached out to along the way and contributing back to the community is beneficial. Honestly, the best interaction is seeing someone else's enthusiasm discovering something new and half the time I also learn something in the process. Some ways I mentor - GenHeration, Polygence, and plain old just email answering (hello to all you internet people :D ).
+- Teaching && Mentoring is important to me - it takes a village to succeed. I couldnt have gotten to where I am without the many mentors and mentees along the way. Honestly, the best interaction is seeing someone else's enthusiasm discovering something new and half the time I also learn something in the process. Some ways I mentor - GenHeration, Polygence, and plain old just email answering (hello to all you internet people :D ).
 
 - My [email](mailto:hiya@hanbo.dev) is always open - I may be slow to respond
 
