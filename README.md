@@ -26,6 +26,6 @@ Some Things, though a bit more random:
 
 - There was a rule created in the NCJLA Lacrosse league because of me
 
-- there's a star named after me in one of the official registries (got it as a birthday gift, thanks Nan!)
+- There's a star named after me in one of the official registries (got it as a birthday gift, thanks Nan!)
 
-- athletically, half the time i'm left-side dominate, half the time it's right, your guess is as good as mine
+- Athletically, half the time i'm left-side dominate, half the time it's right, your guess is as good as mine
