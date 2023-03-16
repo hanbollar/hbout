@@ -1,5 +1,7 @@
 Hiya 👋, Hannah here ~ 
 
+Welcome to my... h-about page 🥁
+
 To check out my 'official' history - view my [:linkedin:](https://linkedin.com/in/hannah-bollar) profile<br/>
 Some others... [:github:](https://github.com/hanbollar), [:twitter:](https://twitter.com/hanbollar), [:instagram:](https://instagram.com/hanbollar)
 
