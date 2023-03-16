@@ -26,6 +26,6 @@ Some Things, though a bit more random:
 
 - I wanted to be a bubble-gum salesman when i was 5
 
-- there's a star named after me (got it as a birthday gift) in one of the official registries
+- there's a star named after me in one of the official registries (got it as a birthday gift, thanks Nan!)
 
 - athletically, half the time i'm left-side dominate, half the time it's right, your guess is as good as mine
