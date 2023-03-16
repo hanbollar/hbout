@@ -16,7 +16,7 @@ Some Things:
 
 - 🎨 Have been heavily involved in the computer graphics communites - Penn Siggraph, Penn AWE, have a [Siggraph Member Profile](https://www.siggraph.org/inside-siggraph/member-profiles/profile/?member=hannah-bollar), joined Khronos, and a few other things that are still on the way.
 
-- 🔢 Teaching && Mentoring is important to me - it takes a village to succeed. I couldnt have gotten to where I am without the many mentors and mentees along the way, and honestly, the best interaction is seeing someone else's enthusiasm discovering something new and half the time I also learn something in the process. Some ways I currently mentor - [GenHeration](https://genheration.com/), [Polygence](https://www.polygence.org/), Guest Lecturing at Universities, and plain old just email answering (hello to all you internet people :D ).
+- 🔢 Teaching && Mentoring is important to me. It takes a village to succeed, and I couldnt have gotten to where I am without the support. Some ways I currently mentor - [GenHeration](https://genheration.com/), [Polygence](https://www.polygence.org/), Guest Lecturing at Universities, and plain old just email answering (hello to all you internet people :D ).
 
 - 📬 My [email](mailto:hiya@hanbo.dev) is always open - I may be slow to respond
 
