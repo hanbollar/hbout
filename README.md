@@ -13,7 +13,7 @@ Some Things:
 
 - 💼 I've done work at a few different places ([KittyCAD](https://kittycad.io/), [Pixar](https://pixar.com), [Unity](https://unity.com/), [Cesium](https://cesium.com), [Nvidia](https://nvidia.com), [Penn CG-Research](http://cg.cis.upenn.edu/summerresearch.html), [iDTech](https://www.idtech.com/), ...) and have a lot of things left to do, so stay tuned ;)
 
-- 🎓 Earned a BSE in [Computer Science : Digital Media Design](https://catalog.upenn.edu/undergraduate/programs/digital-media-design-bse/) and an MSE in [Computer Graphics in Game Technology](https://www.cis.upenn.edu/graduate/program-offerings/mse-in-computer-graphics-and-game-technology/) from [Penn](https://www.upenn.edu/). The place was like a candy shop of things todo - did some TAing (covering math,cs,physics,art,etc), earned some awards, and met a lot of great people (shout out [CG@Penn](https://cg.cis.upenn.edu)) ~
+- 🎓 Earned a BSE in [Computer Science : Digital Media Design](https://catalog.upenn.edu/undergraduate/programs/digital-media-design-bse/) and an MSE in [Computer Graphics in Game Technology](https://www.cis.upenn.edu/graduate/program-offerings/mse-in-computer-graphics-and-game-technology/) from [Penn](https://www.upenn.edu/). The place was like a candy shop of things todo - did some TAing (covering math,cs,physics,art,etc), earned some awards, and met a lot of great people (shout out to [CG@Penn](https://cg.cis.upenn.edu)) ~
 
 - 🎨 Have been heavily involved in the computer graphics communites - Penn Siggraph, Penn AWE, have a [Siggraph Member Profile](https://www.siggraph.org/inside-siggraph/member-profiles/profile/?member=hannah-bollar), joined Khronos, and a few other things that are still on the way.
 
