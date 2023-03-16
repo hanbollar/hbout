@@ -22,9 +22,9 @@ Some Things:
 
 Some Things, though a bit more random:
 
-- There was a rule created in the NCJLA Lacrosse league because of me
-
 - I wanted to be a bubble-gum salesman when i was 5
+
+- There was a rule created in the NCJLA Lacrosse league because of me
 
 - there's a star named after me in one of the official registries (got it as a birthday gift, thanks Nan!)
 
