@@ -8,7 +8,9 @@ Some others... [:github:](https://github.com/hanbollar), [:twitter:](https://twi
 
 <br/>
 I like to be at the synergetic intersection of physics, art, and code
-
+<br/>
+<br/>
+<br/>
 Some Things:
 
 - 🐱 Currently building [KittyCAD](https://kittycad.io) with an amazing group of people - our focus is '[Infrastructure for Hardware Designers](https://kittycad.io/product)' to bring CAD and manufacturing into the modern era. [Have questions?](mailto:kittycad@hannahbollar.com) or [Business inquiries?](mailto:hannah@kittycad.io) <br/>🔥[We're Hiring!](https://kittycad.io/careers/)🔥
