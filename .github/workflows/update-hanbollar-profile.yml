@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'README.md'
+      - .github/workflows/update-hanbollar-profile.yml
 
 jobs:
   update-readme:
@@ -37,5 +40,5 @@ jobs:
           git config user.name "Hannah Bollar"
           git config user.email "github@hannahbollar.com"
           git add README.md
-          git commit -m "Update README from hbout"
+          git commit -m ":sparkles: hbout :sparkles:"
           git push --quiet --set-upstream origin HEAD
