@@ -20,9 +20,9 @@ jobs:
       - name: see if info is there
         run: |
           echo "ll .."
-          ll ..
+          ls -al ..
           echo "ll ."
-          ll .
+          ls -al .
 
       - name: Checkout Profile Repository
         uses: actions/checkout@v3
