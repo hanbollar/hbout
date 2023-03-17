@@ -1,0 +1,33 @@
+name: Update hanbollar-profile README
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout this Repository
+        uses: actions/checkout@v2
+
+      - name: Get README content
+        id: get-readme
+        run: echo "::set-output name=readme::$(cat README.md)"
+
+      - name: Checkout the hanbollar-profile default Repository
+        uses: actions/checkout@v2
+        with:
+          repository: hanbollar/hanbollar
+
+      - name: Update README
+        run: |
+          echo "${{ steps.get-readme.outputs.readme }}" > README.md
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add README.md
+          git commit -m "Update README"
+          git push
+        with:
+          token: ${{ PROFILE_PAT }}
