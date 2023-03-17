@@ -20,6 +20,8 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: hanbollar/hanbollar
+        env:
+          REPO_TOKEN: ${{ secrets.PROFILE_PAT }}
 
       - name: Update README
         env:
