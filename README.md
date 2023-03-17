@@ -1,6 +1,6 @@
-Hiya 👋, Welcome to my... h-about page 🥁<br/><br/>
+Hiya 👋, welcome to my... h-about page 🥁<br/><br/>
 
-To check out my 'official' history - view my [:linkedin:](https://linkedin.com/in/hannah-bollar) profile<br/>
+To check out an 'official' history - view my [:linkedin:](https://linkedin.com/in/hannah-bollar) profile<br/>
 Some others... [:github:](https://github.com/hanbollar), [:twitter:](https://twitter.com/hanbollar), [:instagram:](https://instagram.com/hanbollar)
 
 I like to be at the synergetic intersection of physics, art, and code<br/><br/>
