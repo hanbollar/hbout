@@ -1,4 +1,4 @@
-name: Update hanbollar-profile README
+name: Update README
 
 on:
   push:
@@ -9,24 +9,24 @@ jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout this Repository
-        uses: actions/checkout@v3
+      - name: Checkout Current Repository
+        uses: actions/checkout@v2
 
       - name: Get README content
         id: get-readme
         run: echo "::set-output name=readme::$(cat README.md)"
 
-      - name: Checkout the hanbollar-profile default Repository
-        uses: actions/checkout@v3
+      - name: Checkout Profile Repository
+        uses: actions/checkout@v2
         with:
-          repository: hanbollar/hanbollar
-          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: <username>/<Profile Repository>
+          token: ${{ secrets.PROFILE_README_PAT }}
 
       - name: Update README
         run: |
           echo "${{ steps.get-readme.outputs.readme }}" > README.md
-          git config user.name "github@hannahbollar.com" #"github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "hanbollar" #"github-actions[bot]"
+          git config user.name "Hannah Bollar"
+          git config user.email "github@hannahbollar.com"
           git add README.md
-          git commit -m "Update README"
+          git commit -m "Update README from hbout"
           git push --quiet --set-upstream origin HEAD
