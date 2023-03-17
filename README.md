@@ -29,9 +29,9 @@ Some Things, though a bit more random:
 
 Contact:
 
-- 📬 My [email](mailto:hiya@hanbo.dev) is always open - I may be slow to respond
+- 📬 My [email](mailto:hiya@hanbo.dev) is always open - I may be slow to respond<br/><br/>
 
-<br/>
-Happy coding everyone
+
+Happy coding everyone<br/>
 
 &ensp;&ensp;&ensp;&ensp;- [@hanbollar](https://github.com/hanbollar)
