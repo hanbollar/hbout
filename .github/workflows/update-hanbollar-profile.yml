@@ -10,31 +10,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout this Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Get README content
         id: get-readme
         run: echo "::set-output name=readme::$(cat README.md)"
 
       - name: Checkout the hanbollar-profile default Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           repository: hanbollar/hanbollar
-        env:
-          REPO_TOKEN: ${{ secrets.PROFILE_PAT }}
-
-      - name: remove extra config
-        run: |
-          # https://stackoverflow.com/a/69979203/19747592
-          git config --unset-all http.https://github.com/.extraheader
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Update README
-        env:
-          REPO_TOKEN: ${{ secrets.PROFILE_PAT }}
         run: |
           echo "${{ steps.get-readme.outputs.readme }}" > README.md
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add README.md
           git commit -m "Update README"
-          git push
+          git push --quiet --set-upstream origin HEAD
