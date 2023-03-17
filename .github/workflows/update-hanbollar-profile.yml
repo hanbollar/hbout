@@ -23,6 +23,11 @@ jobs:
         env:
           REPO_TOKEN: ${{ secrets.PROFILE_PAT }}
 
+      - name: remove extra config
+        run: |
+          # https://stackoverflow.com/a/69979203/19747592
+          git config --unset-all http.https://github.com/.extraheader
+
       - name: Update README
         env:
           REPO_TOKEN: ${{ secrets.PROFILE_PAT }}
