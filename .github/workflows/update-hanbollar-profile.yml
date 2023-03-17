@@ -19,7 +19,7 @@ jobs:
       - name: Checkout Profile Repository
         uses: actions/checkout@v2
         with:
-          repository: <username>/<Profile Repository>
+          repository: hanbollar/hanbollar
           token: ${{ secrets.PROFILE_README_PAT }}
 
       - name: Update README
