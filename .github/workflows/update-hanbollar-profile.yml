@@ -22,6 +22,8 @@ jobs:
           repository: hanbollar/hanbollar
 
       - name: Update README
+        env:
+          REPO_TOKEN: ${{ secrets.PROFILE_PAT }}
         run: |
           echo "${{ steps.get-readme.outputs.readme }}" > README.md
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
@@ -29,5 +31,3 @@ jobs:
           git add README.md
           git commit -m "Update README"
           git push
-        with:
-          token: ${{ PROFILE_PAT }}
