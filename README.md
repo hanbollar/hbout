@@ -25,11 +25,10 @@ Some Things, though a bit more random:
 
 - There's a star named after me in one of the official registries (got it as a birthday gift, thanks Nan!)
 
-- Athletically, half the time i'm left-side dominate, half the time it's right, your guess is as good as mine
+- Athletically, half the time i'm left-side dominate, half the time it's right, your guess is as good as mine<br/><br/>
 
-Contact:
 
-- 📬 My [email](mailto:hiya@hanbo.dev) is always open - I may be slow to respond<br/><br/>
+My [email](mailto:hiya@hanbo.dev) is always open 📬 - I may be slow to respond<br/><br/>
 
 
 Happy coding everyone<br/>
