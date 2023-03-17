@@ -1,17 +1,17 @@
 Hiya 👋, Hannah here ~ 
 
-<br/><br/>
+<br/>
 Welcome to my... h-about page 🥁
 
 To check out my 'official' history - view my [:linkedin:](https://linkedin.com/in/hannah-bollar) profile<br/>
 Some others... [:github:](https://github.com/hanbollar), [:twitter:](https://twitter.com/hanbollar), [:instagram:](https://instagram.com/hanbollar)
 
-<br/><br/>
+<br/>
 I like to be at the synergetic intersection of physics, art, and code
 
 Some Things:
 
-- 🐱 Currently building [KittyCAD](https://kittycad.io) with an amazing group of people - our focus is '[Infrastructure for Hardware Designers](https://kittycad.io/product)' to bring CAD and manufacturing into the modern era. [Have questions?](mailto:kittycad@hannahbollar.com) or [Business inquiries?](mailto:hannah@kittycad.io). 🔥[We're Hiring!](https://kittycad.io/careers/)🔥
+- 🐱 Currently building [KittyCAD](https://kittycad.io) with an amazing group of people - our focus is '[Infrastructure for Hardware Designers](https://kittycad.io/product)' to bring CAD and manufacturing into the modern era. [Have questions?](mailto:kittycad@hannahbollar.com) or [Business inquiries?](mailto:hannah@kittycad.io) <br/>🔥[We're Hiring!](https://kittycad.io/careers/)🔥
 
 - 💼 I've done work at a few different places ([KittyCAD](https://kittycad.io/), [Pixar](https://pixar.com), [Unity](https://unity.com/), [Cesium](https://cesium.com), [Nvidia](https://nvidia.com), [Penn CG-Research](http://cg.cis.upenn.edu/summerresearch.html), [iDTech](https://www.idtech.com/), ...) and have a lot of things left to do, so stay tuned ;)
 
@@ -35,7 +35,7 @@ Contact:
 
 - 📬 My [email](mailto:hiya@hanbo.dev) is always open - I may be slow to respond
 
-<br/><br/>
+<br/>
 Happy coding everyone
 
 &ensp;&ensp;&ensp;&ensp;- [@hanbollar](https://github.com/hanbollar)
