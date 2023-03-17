@@ -5,6 +5,7 @@ Welcome to my... h-about page 🥁
 To check out my 'official' history - view my [:linkedin:](https://linkedin.com/in/hannah-bollar) profile<br/>
 Some others... [:github:](https://github.com/hanbollar), [:twitter:](https://twitter.com/hanbollar), [:instagram:](https://instagram.com/hanbollar)
 
+<br/><br/>
 I like to be at the synergetic intersection of physics, art, and code
 
 Some Things:
@@ -19,8 +20,6 @@ Some Things:
 
 - 🍎 Teaching && Mentoring is important to me. It takes a village to succeed, and I couldnt have gotten to where I am without the support. Some ways I currently mentor - [GenHeration](https://genheration.com/), [Polygence](https://www.polygence.org/), Guest Lecturing at Universities, and plain old just email answering (hello to all you internet people :D ).
 
-- 📬 My [email](mailto:hiya@hanbo.dev) is always open - I may be slow to respond
-
 Some Things, though a bit more random:
 
 - I wanted to be a bubble-gum salesman when i was 5
@@ -30,3 +29,12 @@ Some Things, though a bit more random:
 - There's a star named after me in one of the official registries (got it as a birthday gift, thanks Nan!)
 
 - Athletically, half the time i'm left-side dominate, half the time it's right, your guess is as good as mine
+
+Contact:
+
+- 📬 My [email](mailto:hiya@hanbo.dev) is always open - I may be slow to respond
+
+<br/><br/>
+Happy coding everyone
+
+&ensp;&ensp;&ensp;&ensp;- [@hanbollar](https://github.com/hanbollar)
