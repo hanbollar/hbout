@@ -14,7 +14,15 @@ jobs:
 
       - name: Get README content
         id: get-readme
-        run: echo "::set-output name=readme::$(cat README.md)"
+        run: |
+          cat README.md > ../info.txt
+
+      - name: see if info is there
+        run: |
+          echo "ll .."
+          ll ..
+          echo "ll ."
+          ll .
 
       - name: Checkout Profile Repository
         uses: actions/checkout@v3
@@ -25,7 +33,7 @@ jobs:
 
       - name: Update README
         run: |
-          echo "${{ steps.get-readme.outputs.readme }}" > README.md
+          cat ../info.txt > README.md
           git config user.name "Hannah Bollar"
           git config user.email "github@hannahbollar.com"
           git add README.md
