@@ -25,7 +25,7 @@ Some Things, though a bit more random:
 - Athletically, half the time i'm left-side dominate, half the time it's right, your guess is as good as mine<br/><br/>
 
 
-My [email](mailto:hiya@hanbo.dev) is always open 📬 - I may be slow to respond<br/><br/>
+My [email](mailto:hiya@hanbo.dev) is always open 📬 ~
 
 
 Happy coding everyone<br/>
