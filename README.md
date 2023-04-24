@@ -22,7 +22,7 @@ Some Things, though a bit more random:
 - I wanted to be a bubble-gum salesman when i was 5
 - There was a rule created in the NCJLA Lacrosse league because of me
 - There's a star named after me in one of the official registries (got it as a birthday gift, thanks Nan!)
-- Athletically, half the time i'm left-side dominate, half the time it's right, your guess is as good as mine<br/><br/>
+- Athletically, half the time i'm left-side dominant, half the time it's right, your guess is as good as mine<br/><br/>
 
 
 My [email](mailto:hiya@hanbo.dev) is always open 📬 ~
