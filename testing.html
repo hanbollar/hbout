@@ -52,7 +52,7 @@
                 color:white;
             }
             #tenets {
-                height:100vh;
+                height:120vh;
                 background-color:white;
                 color:black;
                 overflow: auto;
@@ -63,7 +63,7 @@
                 color:white;
             }
             #footer {
-                height:20vh;
+                height:25vh;
                 background-color:white;
                 color:black;
             }
@@ -79,6 +79,7 @@
              .scroll-container {
                 scroll-snap-type: y proximity;
                 scroll-padding-top: 15vh;
+                scroll-padding-bottom: 15vh;
                 overflow-y: scroll;
             }
             .scroll-page {
@@ -95,8 +96,6 @@
                 transform: translateY(-50%);
                 <!-- background-color: red; -->
                 height: 100%;
-                padding-top: 5vh;
-                padding-bottom: 5vh;
             }
             .vertical-align-footing {
                 position: relative;
@@ -115,6 +114,9 @@
             }
             .article-inline {
                 width: 60px;
+            }
+            .builder {
+                color: yellow;
             }
             .physics {
                 color: cyan;
@@ -157,7 +159,7 @@
                 <div class=vertical-align-title>
                     <h1>Core Driver</h1>
                     <h3>🛠️ 🌱 🎨 🖥️</h3>
-                    <h3><i>Builder at the synergetic intersection of <span class="physics">Physics</span>, <span class="art">Art</span>, && <span class="code">Code</span></i></h3>
+                    <h3><i><span class="builder">Builder</span> at the synergetic intersection of <span class="physics">Physics</span>, <span class="art">Art</span>, && <span class="code">Code</span></i></h3>
                 </div>
             </div>
         </div>
@@ -220,22 +222,23 @@
                     <h1 id=web-of-words>Web of Words</h1>
                     <h3><i>Not a mind-map, but it'll do</i></h3>
                 </div>
-            </div>
-            <div id=footing class=vertical-align-footing>
-                <ul><li>Archive (put all these elements directly in the 3js)</li>
-                    <!--
-                    <li>SearchEmoji</li>
-                    this is not the best way to search - need to add another way to search later
-                    -->
-                    <li>Filter (creates checklist toggle)</li>
-                    <li>(subscribe) I want to stay updated</li>
-                </ul>
+                <div id=footing class=vertical-align-footing>
+                    <ul><li>Archive (put all these elements directly in the 3js)</li>
+                        <!--
+                        <li>SearchEmoji</li>
+                        this is not the best way to search - need to add another way to search later
+                        -->
+                        <li>Filter (creates checklist toggle)</li>
+                        <li>(subscribe) I want to stay updated</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <!-- at some point add in a doings section here but not important now -->
         <div id=footer class=scroll-page>
             <div id=content class=vertical-align-content>
                 <p>
+                    <br/>
                     Want to get in touch? My <a href="mailto:hiya@hanbollar.dev">email</a> is always open.
                     <br/>
                     Happy building everyone.
@@ -250,6 +253,7 @@
                 </h1>
                 <br/>
                 <p>Copyright 2016-<script>document.write(new Date().getFullYear());</script>.</p>
+                <br/>
             </div>
         </div>
     </body>
