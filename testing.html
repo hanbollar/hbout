@@ -52,9 +52,10 @@
                 color:white;
             }
             #tenets {
-                height:120vh;
+                height:100vh;
                 background-color:white;
                 color:black;
+                overflow: auto;
             }
             #web {
                 height:100vh;
@@ -75,7 +76,7 @@
                 todo: figure this out
                 https://web.dev/css-scroll-snap/
             -->
-            .scroll-container {
+             .scroll-container {
                 scroll-snap-type: y proximity;
                 scroll-padding-top: 15vh;
                 overflow-y: scroll;
@@ -90,37 +91,18 @@
             }
             .vertical-align-content {
                 position: relative;
-                top: 40%;
-                transform: translateY(-40%);
-            }
-            .vertical-align-arrow {
-                position: relative;
-                top: 30%;
-                transform: translateY(-30%);
+                top: 50%;
+                transform: translateY(-50%);
+                <!-- background-color: red; -->
+                height: 100%;
+                padding-top: 5vh;
+                padding-bottom: 5vh;
             }
             .vertical-align-footing {
                 position: relative;
                 top: 85%;
                 transform: translateY(-85%);
-            }
-            .align-physics-triangle {
-                position: relative;
-                top: 20%;
-                transform: translateY(-20%);
-                padding-right: 40%;
-            }
-            .align-art-triangle {
-                position: relative;
-                top: 40%;
-                transform: translateY(-40%);
-                padding-left: 40%;
-            }
-            .align-code-triangle {
-                position: relative;
-                top: 57%;
-                transform: translateY(-57%);
-                padding-right: 33%;
-            }
+            } 
             .paragraph {
                 text-align: left;
                 margin-left: 20%;
@@ -133,7 +115,15 @@
             }
             .article-inline {
                 width: 60px;
-
+            }
+            .physics {
+                color: cyan;
+            }
+            .art {
+                color: magenta;
+            }
+            .code {
+                color: #8a2be2;
             }
         </style>
     </head>
@@ -158,27 +148,25 @@
                     Happy building everyone
                     <br/><br/>
                     - @hanbollar
-                    <br/><br/>
-                    |<br/>
-                    |<br/>
-                    v
-            </div>
-            <div id=arrow class=vertical-align-arrow>
-                <h1><i class="fa fa-angle-down"></i></h1>
+                    <br/><br/><br/>
+                    <h1><i class="fa fa-angle-down"></i></h1>
             </div>
         </div>
         <div id=core class=scroll-page>
-            <div id=title class=vertical-align-title>
-                <h1>Core Drivers</h1>
-                <h3><i>Builder at the synergetic intersection of Physics, Art, && Code</i></h3>
+            <div id=content class=vertical-align-content>
+                <div class=vertical-align-title>
+                    <h1>Core Driver</h1>
+                    <h3>🛠️ 🌱 🎨 🖥️</h3>
+                    <h3><i>Builder at the synergetic intersection of <span class="physics">Physics</span>, <span class="art">Art</span>, && <span class="code">Code</span></i></h3>
+                </div>
             </div>
         </div>
         <div id=tenets class=scroll-page>
-            <div id=title class=vertical-align-title>
-                <h1><!--Doings-->Tenets</h1>
-                <h3><i><!--Making things happen one step at a time-->What you do is what matters</i></h3>
-            </div>
             <div id=content class=vertical-align-content>
+                <div class=vertical-align-title>
+                    <h1><!--Doings-->Tenets</h1>
+                    <h3><i><!--Making things happen one step at a time-->What you do is what matters</i></h3>
+                </div>
                 <!--<h3 class=paragraph>
                     The more good you give to the world, the more good the world gives you in return. What you do is what matters.
                 </h3>-->
@@ -222,14 +210,16 @@
                 <p class=paragraph>
                     Startups are constantly changing endeavors in the climate of today. Entrepreneurs rely on each other to navigate the always interesting times.
                     <br/><br/>
-                    Along with the help from others, I currently advise two stealth startups and invest in <b>climate-tech</b>, <b>computer graphics (gpu, vr, engine, ...)</b>, and <b>novel</b> opportunities.
+                    Along with the help from others, I currently advise two stealth startups and invest in <b>computer graphics (gpu, vr, engine, ...)</b>, <b>climate-tech</b>, <b>health-tech</b>, and <b>novel</b> opportunities.
                 </p>
             </div>
         </div>
         <div id=web class=scroll-page>
-            <div id=title class=vertical-align-title>
-                <h1 id=web-of-words>Web of Words</h1>
-                <h3><i>Not a mind-map, but it'll do</i></h3>
+            <div id=content class=vertical-align-content>
+                <div class=vertical-align-title>
+                    <h1 id=web-of-words>Web of Words</h1>
+                    <h3><i>Not a mind-map, but it'll do</i></h3>
+                </div>
             </div>
             <div id=footing class=vertical-align-footing>
                 <ul><li>Archive (put all these elements directly in the 3js)</li>
