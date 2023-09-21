@@ -33,7 +33,7 @@ jobs:
         for item in obj:
           if item[\"private\"]:
             continue
-          list=list + \"\" + item[\"created_at\"][:10] + \" : <a href=\"#/\" + item[\"name\"] + \" target=\"_blank\"> + item[\"name\"] + \"</a><br/>\"
+          list=list + \"\" + item[\"created_at\"][:10] + \" : \<a href=\"#/\" + item[\"name\"] + \" target=\"_blank\"\\> + item[\"name\"] + \"</a><br/>\"
 
         print(list)
         ")
