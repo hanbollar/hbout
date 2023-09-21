@@ -50,34 +50,42 @@ jobs:
 
     - name: replace old list contents
       run: |
-        substr="<!-- PROJECT LIST_BEGIN -->"
-        substring="<!-- PROJECT LIST_END -->"
-        file="index.html"
+        #substr="<!-- PROJECT LIST_BEGIN -->"
+        #substring="<!-- PROJECT LIST_END -->"
+        #file="index.html"
  
-        prefix=${str%%$substr*}
-        indexone=${#prefix}
-        echo "indexone"
-        echo $indexone
+        #prefix=${str%%$substr*}
 
-        strtwo=$(<$file)
-        prefixtwo=${strtwo%%$substring*}
-        indextwo=${#prefixtwo}
-        echo "indextwo"
-        echo $indextwo
+        #indexone=${#prefix}
+        #echo "indexone"
+        #echo $indexone
+        #
+        #strtwo=$(<$file)
+        
+        #prefixtwo=${strtwo%%$substring*}
 
-        str_begin=${str:0:indexone}
-        str_end=${str:indextwo:}
+        #indextwo=${#prefixtwo}
+        #echo "indextwo"
+        #echo $indextwo
 
-        echo "begin"
-        echo $str_begin
-        echo "end"
-        echo $str_end
+        #str_begin=${str:0:indexone}
+        #str_end=${str:indextwo:}
 
-        final="${str_begin}${substr}<br/>${{env.the_list}}<br/>${substring}<br/>${str_end}"
-        echo "final"
-        echo $final
+        #echo "begin"
+        #echo $str_begin
+        #echo "end"
+        #echo $str_end
 
-        echo $final >$file
+        #final="${str_begin}${substr}<br/>${{env.the_list}}<br/>${substring}<br/>${str_end}"
+        
+        #echo "final"
+        #echo $final
+
+        BEGIN_PATTERN="<!-- PROJECT LIST_BEGIN -->"
+        END_PATTERN="<!-- PROJECT LIST_END -->"
+        sed -i "/$BEGIN_PATTERN/,/$END_PATTERN/c\\
+        $BEGIN_PATTERN<br/>${{env.the_list}}<br/>$END_PATTERN
+        " index.html
 
     - name: cat 2
       run: |
