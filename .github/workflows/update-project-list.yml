@@ -100,3 +100,5 @@ jobs:
         git config user.email "github@hannahbollar.com"
         git commit -am "[BOT] all them projects"
         git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
