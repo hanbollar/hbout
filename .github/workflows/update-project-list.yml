@@ -52,13 +52,14 @@ jobs:
       run: |
         substr="<!-- PROJECT LIST_BEGIN -->"
         substring="<!-- PROJECT LIST_END -->"
+        file="index.html"
  
         prefix=${str%%$substr*}
         indexone=${#prefix}
         echo "indexone"
         echo $indexone
 
-        strtwo=$(<README.md)
+        strtwo=$(<$file)
         prefixtwo=${strtwo%%$substring*}
         indextwo=${#prefixtwo}
         echo "indextwo"
@@ -76,7 +77,7 @@ jobs:
         echo "final"
         echo $final
 
-        echo $final >index.html
+        echo $final >$file
 
     - name: cat 2
       run: |
