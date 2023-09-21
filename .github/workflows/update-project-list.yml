@@ -48,16 +48,8 @@ jobs:
       run: |
         echo "${{ env.the_list }}"
 
-    - name: cat 1
-      run: |
-        echo "1"
-        cat README.md
-
     - name: replace old list contents
       run: |
-        str=$(<README.md)
-        echo "str"
-        echo $str
         substr="<!-- PROJECT LIST_BEGIN -->"
         substring="<!-- PROJECT LIST_END -->"
  
@@ -84,12 +76,12 @@ jobs:
         echo "final"
         echo $final
 
-        echo $final >README.md
+        echo $final >index.html
 
     - name: cat 2
       run: |
         echo "2"
-        cat README.md
+        cat index.html
 
     - name: Verify Changed files
       uses: tj-actions/verify-changed-files@v12
