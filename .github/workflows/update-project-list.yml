@@ -96,8 +96,6 @@ jobs:
     - name: push changes if any
       if: steps.verify-changed-files.outputs.files_changed == 'true'
       run: |
-        #git config --local user.email "github-actions[bot]@users.noreply.github.com"
-        #git config --local user.name "github-actions[bot]"
         git config user.name "Hannah Bollar"
         git config user.email "github@hannahbollar.com"
         git commit -am "[BOT] all them projects"
