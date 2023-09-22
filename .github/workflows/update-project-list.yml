@@ -39,10 +39,6 @@ jobs:
 
         echo $THE_LIST
         echo "the_list=$THE_LIST" >> $GITHUB_ENV
-    
-    - uses: actions/checkout@v3
-      with:
-          fetch-depth: 2
 
     - name: list
       run: |
@@ -50,9 +46,10 @@ jobs:
 
     - name: cat 1
       run: |
-        echo "1"
         cat index.html
-
+    
+    - name: run the sed
+      run: |
         sed -i "/$BEGIN_PATTERN/,/$END_PATTERN/c\\
           $BEGIN_PATTERN\\
           ${{env.the_list}}\\
@@ -61,7 +58,6 @@ jobs:
 
     - name: cat 2
       run: |
-        echo "2"
         cat index.html
 
     - name: Verify Changed files
