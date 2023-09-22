@@ -32,6 +32,12 @@ jobs:
     - name: format the list
       id: project_list
       run: |
+        
+        curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+        "https://api.github.com/user/repos?type=public&per_page=100" > HI
+        echo $HI
+        
+
         INFO=""
         curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
         "https://api.github.com/user/repos?type=public&per_page=100" \
