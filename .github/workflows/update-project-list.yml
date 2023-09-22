@@ -33,12 +33,17 @@ jobs:
         for item in obj:
           if item[\"private\"]:
             continue
-          list=list + \"\" + item[\"created_at\"][:10] + \" : <a href='https://hanbollar.dev/\" + item[\"name\"] + \"'>\" + item[\"name\"] + \"</a><br/>\"
+          list=list + \"\" + item[\"created_at\"][:10] + \" : <a href='https://github.com/hanbollar/\" + item[\"name\"] + \"'>\" + item[\"name\"] + \"</a><br/>\"
         print(list)
         ")
 
         echo $THE_LIST
+        echo "info=$INFO" >> $GITHUB_ENV
         echo "the_list=$THE_LIST" >> $GITHUB_ENV
+
+    - name: info
+      run: |
+        echo "${{ env.info }}"
 
     - name: list
       run: |
