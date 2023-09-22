@@ -52,7 +52,7 @@ jobs:
       run: |
         BEGIN_PATTERN="<!-- BEGIN PROJECTS -->"
         END_PATTERN="<!-- END PROJECTS -->"
-        sed -i "/$BEGIN_PATTERN/,/$END_PATTERN/c\\$BEGIN_PATTERN${{env.the_list}}$END_PATTERN" index.html
+        sed -i "/$BEGIN_PATTERN/,/$END_PATTERN/c $BEGIN_PATTERN${{env.the_list}}$END_PATTERN" index.html
 
     - name: cat 2
       run: |
