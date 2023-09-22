@@ -28,6 +28,10 @@ jobs:
         curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
           "https://api.github.com/user/repos?type=public&per_page=100" \
           > repo_list.json
+    
+    - name: read the list
+      run: |
+        cat repo_list.json
 
     - name: Create Bash Script
       run: |
