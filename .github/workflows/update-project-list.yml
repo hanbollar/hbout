@@ -48,11 +48,38 @@ jobs:
       run: |
         cat index.html
     
-    - name: run the sed
+    - name: run the insert
       run: |
-        BEGIN_PATTERN="<!-- BEGIN PROJECTS -->"
-        END_PATTERN="<!-- END PROJECTS -->"
-        sed -i "/$BEGIN_PATTERN/,/$END_PATTERN/c $BEGIN_PATTERN${{env.the_list}}$END_PATTERN" index.html
+        # Function to find the last index of a substring in a string
+        find_last_index() {
+            string="$1"
+            substring="$2"
+            echo "${string##*$substring}" | awk "{print length(\$0)}"
+        }
+        find_first_index() {
+            string="$1"
+            substring="$2"
+            echo $(expr index "$string" "$substring") 
+        }
+
+        
+        cat index.html > input_string
+        start_search_substring="<!-- BEGIN PROJECTS -->"
+        end_search_substring="<!-- END PROJECTS -->"
+        
+        last_index_of_start=$(find_last_index "$input_string" "$search_substring")
+        start_index_of_end=$(find_first_index "$input_string" "$end_search_substring")
+
+        # Use parameter expansion to extract the substrings
+        str0="${input_string:0:last_index_of_start+1}"
+        str1="${env.the_list}"
+        str2="${input_string:start_index_of_end}"
+
+        # Combine the substrings
+        combined_string="${str0}${str1}${str2}"
+        
+        # cleanup index with new string
+        combined_string > index.html
 
     - name: cat 2
       run: |
