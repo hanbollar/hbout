@@ -22,36 +22,25 @@ jobs:
       with:
         python-version: '3.10.7'
 
-    - name: grab github user's repository list
-      id: repo_list
-      run: |
-        # grab github user's respository list and format it into a string
-        curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-        "https://api.github.com/user/repos?type=public&per_page=100" > HI
-        echo $HI
-        
-    - name: format the list
-      id: project_list
+    - name: Fetch Repository List
+      id: repos
       run: |
         curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-        "https://api.github.com/user/repos?type=public&per_page=100" > HI
-        echo $HI
+          "https://api.github.com/user/repos?type=public&per_page=100" \
+          > repo_list.json
 
-        INFO=""
-        curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-        "https://api.github.com/user/repos?type=public&per_page=100" \
-        | jq -r '.[] | "\(.name) \(.html_url) \(.description // "")"' > INFO
-        echo $INFO
+    - name: Create Bash Script
+      run: |
+        CONTENT_LIST=""
+        while IFS= read -r line; do
+          name=$(echo $line | jq -r '.name')
+          url=$(echo $line | jq -r '.html_url')
+          description=$(echo $line | jq -r '.description // ""')
+          echo "echo \"[$name]($url) - $description\"" >> $CONTENT_LIST
+        done < repo_list.json
 
-        THE_LIST=""
-        cat repo_script.sh | while IFS= read -r line; do
-            name=$(echo $line | awk '{print $1}')
-            url=$(echo $line | awk '{print $2}')
-            description=$(echo $line | cut -d' ' -f3-)
-            echo "echo \"[$name]($url) - $description\"" >> $THE_LIST
-
-        echo $THE_LIST
-        echo "the_list=$THE_LIST" >> $GITHUB_ENV
+        echo $CONTENT_LIST
+        echo "the_list=$CONTENT_LIST" >> $GITHUB_ENV
    
     - uses: actions/checkout@v3
       with:
