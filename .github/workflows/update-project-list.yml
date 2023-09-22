@@ -62,7 +62,6 @@ jobs:
             echo $(expr index "$string" "$substring") 
         }
 
-        
         cat index.html > input_string
         start_search_substring="<!-- BEGIN PROJECTS -->"
         end_search_substring="<!-- END PROJECTS -->"
@@ -76,7 +75,7 @@ jobs:
 
         # Combine the substrings
         ${str0} > index.html
-        env.the_list >> index.html
+        echo "${{ env.the_list }}" >> index.html
         ${str2} >> index.html
 
     - name: cat 2
