@@ -50,6 +50,8 @@ jobs:
     
     - name: run the sed
       run: |
+        BEGIN_PATTERN="<!-- BEGIN PROJECTS -->"
+        END_PATTERN="<!-- END PROJECTS -->"
         sed -i "/$BEGIN_PATTERN/,/$END_PATTERN/c\\
           $BEGIN_PATTERN\\
           ${{env.the_list}}\\
