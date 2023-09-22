@@ -25,7 +25,10 @@ jobs:
     - name: get the list
       id: project_list
       run: |
-        info=$(curl https://api.github.com/users/hanbollar/repos?sort=created&direction=desc)
+        info=$(curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            "https://api.github.com/user/repos?type=public&per_page=100" \
+            | jq -r '.[] | "\(.name) \(.html_url)"')
+        echo $info
 
         THE_LIST=$(echo $info | python3 -c "import json,sys
         obj=json.load(sys.stdin)
