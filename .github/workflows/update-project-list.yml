@@ -43,7 +43,7 @@ jobs:
             name=$(echo $line | awk '{print $1}')
             url=$(echo $line | awk '{print $2}')
             description=$(echo $line | cut -d' ' -f3-)
-            echo "echo \"[$name]($url) - $description\"" >> THE_LIST
+            echo "echo \"[$name]($url) - $description\"" >> $THE_LIST
 
         echo $THE_LIST
         echo "the_list=$THE_LIST" >> $GITHUB_ENV
