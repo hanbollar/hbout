@@ -72,11 +72,10 @@ jobs:
 
         # Use parameter expansion to extract the substrings
         str0="${input_string:0:last_index_of_start+1}"
-        str1="${env.the_list}"
         str2="${input_string:start_index_of_end}"
 
         # Combine the substrings
-        combined_string="${str0}${str1}${str2}"
+        combined_string="${str0}${env.the_list}${str2}"
         
         # cleanup index with new string
         combined_string > index.html
