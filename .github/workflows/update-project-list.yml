@@ -22,21 +22,20 @@ jobs:
       with:
         python-version: '3.10.7'
 
-    - name: Fetch Repository List
-      id: repos
+    - name: grab github user's repository list
+      id: repo_list
       run: |
-        curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-          "https://api.github.com/user/repos?type=public&per_page=100" \
-          | jq -r '.[] | "\(.name) \(.html_url) \(.description)"' > repo_script.sh
-
-    - name: format the list
-      id: project_list
-      run: |
-        
+        # grab github user's respository list and format it into a string
         curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
         "https://api.github.com/user/repos?type=public&per_page=100" > HI
         echo $HI
         
+    - name: format the list
+      id: project_list
+      run: |
+        curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+        "https://api.github.com/user/repos?type=public&per_page=100" > HI
+        echo $HI
 
         INFO=""
         curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
