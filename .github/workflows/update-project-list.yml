@@ -71,7 +71,9 @@ jobs:
 
         # Use parameter expansion to extract the substrings
         str0="${input_string:0:last_index_of_start+1}"
+        echo ${str0}
         str2="${input_string:start_index_of_end}"
+        echo ${str2}
 
         # Combine the substrings
         ${str0} > index.html
